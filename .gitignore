@@ -1,6 +1,7 @@
 # jekyll stuff
 .jekyll-cache/
-_sites/
+_site/
+Gemfile.lock
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
