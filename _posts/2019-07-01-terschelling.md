@@ -8,7 +8,7 @@ share-img: /assets/img/path.webp
 tags: [photo, vacation]
 ---
 
-![me](/assets/img/terschelling_me.jpeg){: .mx-auto.d-block :} ![dune](/assets/img/terschellung_duene.webp){: .mx-auto.d-block :}
+![me](/assets/img/terschelling_me.webp){: .mx-auto.d-block :} ![dune](/assets/img/terschellung_duene.webp){: .mx-auto.d-block :}
 
 ## Terschelling
 

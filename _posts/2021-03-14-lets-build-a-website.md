@@ -2,7 +2,7 @@
 layout: post
 title: Let's build a website
 subtitle: This is a test post
-cover-img: /assets/img/terschelling_me.jpeg
+cover-img: /assets/img/terschelling_me.webp
 thumbnail-img: /assets/img/terschelling_duene.webp
 share-img: /assets/img/sunset.webp
 tags: [photo, test]
