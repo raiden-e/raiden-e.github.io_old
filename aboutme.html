@@ -1,0 +1,15 @@
+---
+layout: default
+title: About Raiden
+permalink: /aboutme
+---
+<div id='content'></div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    setTimeout(function read() {
+        $.get(
+            'https://raw.githubusercontent.com/raiden-e/raiden-e/main/README.md',
+            function (data) { $("#content").append(marked(data)); });
+    }, 30);
+</script>
