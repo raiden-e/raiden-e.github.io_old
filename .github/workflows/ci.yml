@@ -8,7 +8,7 @@ on:
 
 jobs:
   optimize-images:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Compress Images
         uses: calibreapp/image-actions@main
