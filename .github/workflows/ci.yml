@@ -1,14 +1,24 @@
 name: CI
   on:
-    pull_request:
+    push:
+      branches: [ main ]
       paths:
         - 'assets/img/*.jpg'
         - 'assets/img/*.jpeg'
         - 'assets/img/*.png'
         - 'assets/img/*.webp'
         - 'assets/img/*.gif'
+    pull_request:
+      branches: [ main ]
+      paths:
+        - 'assets/img/*.jpg'
+        - 'assets/img/*.jpeg'
+        - 'assets/img/*.png'
+        - 'assets/img/*.webp'
+        - 'assets/img/*.gif'
+
   jobs:
-    build:
+    optimize:
       if: github.event.pull_request.head.repo.full_name == github.repository
       name: Optimize Images
       runs-on: ubuntu-latest
@@ -19,15 +29,13 @@ name: CI
         - name: Compress Images
           uses: calibreapp/image-actions@main
 
-  on: [push, pull_request]
-  jobs:
     build:
       name: Build Jekyll
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: Build the site in the jekyll/builder container
-          run: |
-            export JEKYLL_VERSION=3.8
-            docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-            -e PAGES_REPO_NWO=${{ github.repository }} jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: Build the site in the jekyll/builder container
+            run: |
+              export JEKYLL_VERSION=3.8
+              docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+              -e PAGES_REPO_NWO=${{ github.repository }} jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
