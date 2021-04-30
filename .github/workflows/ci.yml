@@ -1,41 +1,28 @@
 name: CI
-  on:
-    push:
-      branches: [ main ]
-      paths:
-        - 'assets/img/*.jpg'
-        - 'assets/img/*.jpeg'
-        - 'assets/img/*.png'
-        - 'assets/img/*.webp'
-        - 'assets/img/*.gif'
-    pull_request:
-      branches: [ main ]
-      paths:
-        - 'assets/img/*.jpg'
-        - 'assets/img/*.jpeg'
-        - 'assets/img/*.png'
-        - 'assets/img/*.webp'
-        - 'assets/img/*.gif'
 
-  jobs:
-    optimize:
-      if: github.event.pull_request.head.repo.full_name == github.repository
-      name: Optimize Images
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout Repo
-          uses: actions/checkout@v2
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-        - name: Compress Images
-          uses: calibreapp/image-actions@main
+jobs:
+  optimize-images:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Compress Images
+        uses: calibreapp/image-actions@main
+  
+  build:
+    runs-on: ubuntu-latest
 
-    build:
-      name: Build Jekyll
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v2
-          - name: Build the site in the jekyll/builder container
-            run: |
-              export JEKYLL_VERSION=3.8
-              docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-              -e PAGES_REPO_NWO=${{ github.repository }} jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    steps:
+    - name: Cache 
+      uses: actions/cache@v2.1.5
+      with:
+        # A list of files, directories, and wildcard patterns to cache and restore
+        path: ".jekyll-cache"
+        # An explicit key for restoring and saving the cache
+        key: "jekyll-cache"
+
+      
