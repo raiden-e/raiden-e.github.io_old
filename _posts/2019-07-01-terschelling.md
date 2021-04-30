@@ -2,9 +2,9 @@
 layout: post
 title: Terschelling
 subtitle: A nice island
-cover-img: /assets/img/terschelling_meer.jpg
-thumbnail-img: /assets/img/terschelling_meer.jpg
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/terschelling_meer.webp
+thumbnail-img: /assets/img/terschelling_meer.webp
+share-img: /assets/img/path.webp
 tags: [photo, vacation]
 ---
 

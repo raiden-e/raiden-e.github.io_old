@@ -2,13 +2,13 @@
 layout: post
 title: Tetraeder
 subtitle: A stunning construct on a pile of dirt.
-cover-img: /assets/img/sunset.jpg
+cover-img: /assets/img/sunset.webp
 thumbnail-img: /assets/img/sunset.png
-share-img: /assets/img/path.jpg
+share-img: /assets/img/path.webp
 tags: [photo, test]
 ---
 
-<p><img src="/assets/img/tetraeder.png" alt="Sunset Tetraeder" sizes="687px" style="display: block; margin-left: auto; margin-right: auto;" /><img src="/assets/img/sunset.png" alt="Purple set" sizes="687px" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="/assets/img/tetraeder.webp" alt="Sunset Tetraeder" sizes="687px" style="display: block; margin-left: auto; margin-right: auto;" /><img src="/assets/img/sunset.webp" alt="Purple set" sizes="687px" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
 <tbody>
