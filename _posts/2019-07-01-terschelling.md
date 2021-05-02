@@ -3,7 +3,7 @@ layout: post
 title: Terschelling
 subtitle: A nice island
 cover-img: /assets/img/terschelling_meer.webp
-thumbnail-img: /assets/img/terschelling_meer.webp
+thumbnail-img: /assets/img/preview/terschelling_pre.webp
 share-img: /assets/img/path.webp
 tags: [photo, vacation]
 ---

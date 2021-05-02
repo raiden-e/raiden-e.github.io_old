@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My first Post
+thumbnail-img: /assets/img/preview/other_pre.webp
 subtitle: Each post also has a subtitle
 gh-repo: raiden-e/raiden-e
 gh-badge: [star, fork, follow]

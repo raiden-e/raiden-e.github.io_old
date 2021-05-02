@@ -5,3 +5,5 @@
 This is my personal website
 
 I will post some of my other work in the future 😄
+
+Based on [Beautiful Jekyll](https://beautifuljekyll.com)

@@ -18,7 +18,7 @@ html,body {
 
 body {
   flex-direction: column;
-  font-family: 'Abel', 'Times New Roman', serif;
+  font-family: 'Abel', 'Calibri', serif;
   position: relative;
   color: {{ site.text-col | default: "#404040" }};
   background-color: {{ site.page-col | default: "#FFFFFF" }};
@@ -61,7 +61,7 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Abel', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 800;
   line-height: 1.1;
 }
@@ -451,6 +451,16 @@ footer .footer-custom-content {
 
 /* --- Post preview (feed) --- */
 
+@media (min-width: 1200px){
+  .offset-xl-2 {
+      margin-left: 0;
+  }
+  .col-xl-8 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .post-preview {
   padding: 1.35rem 0;
   border-bottom: 1px solid #eee;
@@ -469,15 +479,13 @@ footer .footer-custom-content {
 
 .post-preview a {
   text-decoration: none;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: {{ site.text-col | default: "#404040" }};
 }
-
-.post-preview a:focus,
+/* .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
   color: {{ site.hover-col | default: "#0085A1" }};
-}
+} */
 
 .post-preview .post-title {
   font-size: 1.875rem;
@@ -514,21 +522,27 @@ footer .footer-custom-content {
 .post-preview .post-image {
   float: right;
   margin-left: 0.625rem;
-  height: 12rem;
-  width: 12rem;
+  height: 100%;
+  width: 64%;
+  text-align: center;
 }
 .post-preview .post-image {
-  filter: grayscale(40%);
+  filter: grayscale(70%);
+  transition: 0.6s;
 }
 .post-preview .post-image:hover {
   filter: grayscale(0%);
+  transition: 0.6s;
+  /* -webkit-transition: background-color 1s ease,opacity 1s ease;
+  -moz-transition: background-color 1s ease,opacity 1s ease;
+  transition: background-color 1s ease,opacity 1s ease; */
 }
 .post-preview .post-image img {
   max-height: 100%;
   max-width: 100%;
 }
 .post-preview .post-image-short {
-  margin-top: -2.1875rem;
+  margin-top: 0%;
 }
 @media (max-width: 767px) {
   .post-preview .post-image {
@@ -565,6 +579,7 @@ footer .footer-custom-content {
 @media (min-width: 768px) {
   .post-preview .post-title {
     font-size: 2.25rem;
+    width: 35%
   }
 }
 

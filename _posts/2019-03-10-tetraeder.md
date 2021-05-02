@@ -3,7 +3,7 @@ layout: post
 title: Tetraeder
 subtitle: A stunning construct on a pile of dirt.
 cover-img: /assets/img/sunset.webp
-thumbnail-img: /assets/img/sunset.webp
+thumbnail-img: /assets/img/preview/tetraeder_pre.webp
 share-img: /assets/img/path.webp
 tags: [photo, test]
 ---
