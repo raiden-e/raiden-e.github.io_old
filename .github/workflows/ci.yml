@@ -11,6 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/cache@v2.1.5
+      - name: Cache
+        with:
+          # A list of files, directories, and wildcard patterns to cache and restore
+          path: ".jekyll-cache"
+          # An explicit key for restoring and saving the cache
+          key: "jekyll-cache"
+
     - uses: actions/checkout@v2
       - name: Build the site in the jekyll/builder container
         run: |
@@ -18,10 +26,3 @@ jobs:
           docker run -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           -e PAGES_REPO_NWO=${{ github.repository }} jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
 
-    - name: Cache
-      uses: actions/cache@v2.1.5
-      with:
-        # A list of files, directories, and wildcard patterns to cache and restore
-        path: ".jekyll-cache"
-        # An explicit key for restoring and saving the cache
-        key: "jekyll-cache"
