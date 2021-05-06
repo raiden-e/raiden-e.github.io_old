@@ -203,6 +203,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - _posts/2021-03-14-lets-build-a-website.md
+  - _posts/2020-02-28-test-markdown.md
 
 plugins:
   - jekyll-paginate

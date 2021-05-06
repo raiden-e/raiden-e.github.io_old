@@ -6,6 +6,9 @@ subtitle: I love electronic music and mix it myself.
 
 # Mind looking at some of my work? 😊
 
+Here are two playlists that my bot updates weekly. They help me study and work. Check them out!
+
+<div style="display: flex;justify-content: space-between; margin-top: 2rem"><iframe width="49%" height="380" src="https://open.spotify.com/embed/playlist/6Cu6fL6djm63Em0i93IRUW" frameborder="0" style="padding-right: 2%;"></iframe><iframe width="49%" height="380" style="align-content: right" src="https://open.spotify.com/embed/playlist/5h9LqGUUE4FKQfVwgAu1OA" frameborder="0"></iframe></div>
 <br />
 
 ## Check out some of my mixed sets 🎵
@@ -18,5 +21,4 @@ subtitle: I love electronic music and mix it myself.
 
 ## Some other music that I like 🤩
 
-<div style="display: flex;justify-content: space-between; margin-top: 2rem"><iframe width="49%" height="380" src="https://open.spotify.com/embed/playlist/5h9LqGUUE4FKQfVwgAu1OA" frameborder="0" style="padding-right: 2%;"></iframe><iframe width="49%" height="380" style="align-content: right" src="https://open.spotify.com/embed/playlist/4KAgRQ55OTyUnSaymJFESW" frameborder="0"></iframe></div>
-
+<div style="display: flex;justify-content: space-between; margin-top: 2rem"><iframe width="49%" height="380" src="https://open.spotify.com/embed/playlist/4KAgRQ55OTyUnSaymJFESW" frameborder="0" style="padding-right: 2%;"></iframe><div style="width: 49%;"><iframe width="100%" height="380" style="align-content: right" src="https://open.spotify.com/embed/playlist/57VYcWAMIc97Ig41vPpev6" frameborder="0"></iframe><div style="display: flex; justify-content: center;">⚠ Turn down speakers</div></div></div>
