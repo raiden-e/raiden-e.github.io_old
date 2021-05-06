@@ -11,15 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/cache@v2.1.5
-      - name: Cache
+      - uses: actions/cache@v2
         with:
-          # A list of files, directories, and wildcard patterns to cache and restore
-          path: ".jekyll-cache"
-          # An explicit key for restoring and saving the cache
-          key: "jekyll-cache"
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Build the site in the jekyll/builder container
         run: |
           export JEKYLL_VERSION=3.8
