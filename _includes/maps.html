@@ -1,0 +1,7 @@
+{% if page.maps_uri %}
+<iframe id="maps" src="https://www.google.com/maps/embed?pb={{ page.maps_uri }}"  width="100%" class="wrapped-maps" allowfullscreen="" loading="lazy"></iframe>
+<script type="text/javascript">
+    document.getElementById('maps').setAttribute('height', document.getElementById('left-table').offsetHeight);
+</script>
+{% endif %}
+<!-- pb= -->
