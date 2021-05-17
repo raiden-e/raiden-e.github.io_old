@@ -21,7 +21,7 @@ compress_html:
     envs: []
   blanklines: false
   profile: false
-  startings: [html, head, body]
+  # startings: [html, head, body]
 
 # --- Logo --- #
 
