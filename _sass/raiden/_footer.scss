@@ -17,7 +17,7 @@ footer p.text-muted {
 }
 
 footer a {
-  color: #2f629a;
+  color: #dc143cb3;
 }
 
 footer .list-inline {
@@ -54,4 +54,13 @@ footer .footer-custom-content {
   footer .footer-custom-content {
     font-size: 1rem;
   }
+}
+
+.list-inline-item {
+  transition: 0.5s;
+}
+
+.list-inline-item :hover {
+  text-shadow: 0 1px 5px #dc143cb3;
+  transition: 0.3s;
 }

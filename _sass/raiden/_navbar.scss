@@ -177,7 +177,7 @@
 .navbar-custom .navbar-nav .nav-link:focus,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:focus {
-  color: #0085a1;
+  color: #dc143cb3;
 }
 
 .navbar-custom .avatar-container {
@@ -209,6 +209,12 @@
   width: 100%;
   border-radius: 50%;
   display: block;
+  box-shadow: 0 1px 5px crimson;
+  transition: 1s;
+}
+.navbar-custom .avatar-img :hover {
+  filter: brightness(var(--value, 5)); --value:2;
+  transition: 1s;
 }
 
 .navbar-custom.top-nav-expanded .avatar-container {
