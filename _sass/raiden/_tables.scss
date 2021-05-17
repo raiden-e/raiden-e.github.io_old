@@ -1,0 +1,33 @@
+table {
+  padding: 0;
+}
+table tr {
+  border-top: 1px solid #727272;
+  background-color: #4b4b4b;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n) {
+  background-color: #6b6b6b;
+}
+table tr th {
+  font-weight: bold;
+  border: 1px solid #2c2c2c;
+  text-align: left;
+  margin: 0;
+  padding: 0.375rem 0.8125rem;
+}
+table tr td {
+  border: 1px solid #3f3f3f;
+  text-align: left;
+  margin: 0;
+  padding: 0.375rem 0.8125rem;
+}
+table tr th :first-child,
+table tr td :first-child {
+  margin-top: 0;
+}
+table tr th :last-child,
+table tr td :last-child {
+  margin-bottom: 0;
+}

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
     spec.homepage      = "https://raiden-e.github.io"
     spec.license       = "MIT"
 
-    spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|feed|404|_data|tags|staticman)}i) }
+    spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|feed|404|_data|tags|staticman|music|privacy|trappin|lofi)}i) }
 
     spec.metadata      = {
       "documentation_uri" => "https://github.com/raiden-e/raiden-e.github.io#readme"

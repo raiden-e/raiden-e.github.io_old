@@ -37,7 +37,6 @@
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
 
 
-  
   {% if site.mobile-theme-col %}
   <meta name="theme-color" content="{{ site.mobile-theme-col }}">
   {% endif %}
@@ -68,6 +67,12 @@
     {% endfor %}
   {% endif %}
 
+  {% if layout.common-scss %}
+    {% for scss in layout.common-scss %}
+      <link rel="stylesheet" href="{{ scss | relative_url }}">
+    {% endfor %}
+  {% endif %}
+
   {% if site.site-css %}
     {% for css in site.site-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
@@ -80,11 +85,25 @@
     {% endfor %}
   {% endif %}
 
+  {% if page.common-scss %}
+    {% for scss in page.common-scss %}
+      <link rel="stylesheet" href="{{ scss | relative_url }}">
+    {% endfor %}
+  {% endif %}
+
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
+
+  {% if page.scss %}
+    {% for css in page.scss %}
+      <link rel="stylesheet" href="{{ scss | relative_url }}">
+    {% endfor %}
+  {% endif %}
+
 
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}">
@@ -148,7 +167,7 @@
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/staticman.scss" | relative_url }}">
   {% endif %}
 
   {% if page.head-extra %}

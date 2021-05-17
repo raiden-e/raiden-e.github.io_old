@@ -13,6 +13,16 @@ navbar-links:
   Photos: "#photos"
   Music: "music"
 
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: ["<!-- ", " -->"]
+  endings: [p, li, td]
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -82,7 +92,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "raiden,erdmann,student,business,information,systems"
 
 # --- Colours / background image --- #
 
@@ -107,11 +117,15 @@ footer-link-col: "#2f629a"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#000000"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 # site-css:
-#  - "/assets/css/style.css"
+#   - "/assets/css/glitch.scss"
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:

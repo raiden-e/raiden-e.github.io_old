@@ -1,0 +1,37 @@
+.blog-post :first-child {
+  margin-top: 0;
+}
+
+.blog-post img {
+  max-width: 100%;
+}
+
+.blog-post .caption {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  font-style: italic;
+  color: #777;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
+}
+
+.blog-post hr {
+  max-width: 25%;
+  border-width: 0.25rem;
+  border-radius: 0.1875rem;
+  border-color: #808080;
+}
+
+.blog-post blockquote {
+  padding: 0.625rem 1.25rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  border-left: 0.3125rem solid #eee;
+}
+
+.blog-post blockquote p:last-child {
+  margin-bottom: 0;
+}
