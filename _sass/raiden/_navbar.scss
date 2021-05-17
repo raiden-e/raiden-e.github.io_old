@@ -210,11 +210,12 @@
   border-radius: 50%;
   display: block;
   box-shadow: 0 1px 5px crimson;
-  transition: 1s;
+  transition: 500ms;
 }
-.navbar-custom .avatar-img :hover {
-  filter: brightness(var(--value, 5)); --value:2;
-  transition: 1s;
+
+.navbar-custom:hover .avatar-container:hover .avatar-img:hover {
+  box-shadow: 0 0px 10px crimson;
+  transition: 500ms;
 }
 
 .navbar-custom.top-nav-expanded .avatar-container {
