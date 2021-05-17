@@ -9,6 +9,9 @@ layout: page
 <div class="posts-list" id="photos">
   {% for post in posts %}
   <article class="post-preview">
+    <a href="{{ post.url | absolute_url }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+    </a>
 
     {%- capture thumbnail -%}
       {% if post.thumbnail-img %}
@@ -51,10 +54,6 @@ layout: page
     </div>
     {% endif %}
     {% endunless %}
-
-    <a href="{{ post.url | absolute_url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
-    </a>
    </article>
   {% endfor %}
 </div>
