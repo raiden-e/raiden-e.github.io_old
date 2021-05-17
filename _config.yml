@@ -94,31 +94,6 @@ feed_show_tags: true
 # The keywords to associate with your website, for SEO purposes
 keywords: "raiden,erdmann,student,business,information,systems"
 
-# --- Colours / background image --- #
-
-# Personalize the colours in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#202020"
-navbar-text-col: "#cecece"
-navbar-border-col: "#3d3d3d"
-page-col: "#000000"
-text-col: "#a0a0a0"
-link-col: "#0094ff"
-hover-col: "#0085A1"
-footer-col: "#202020"
-footer-text-col: "#cecece"
-footer-link-col: "#2f629a"
-
-# Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
-
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
-
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-mobile-theme-col: "#000000"
-
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 # site-css:
 #   - "/assets/css/glitch.scss"

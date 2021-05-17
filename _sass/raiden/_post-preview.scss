@@ -73,6 +73,7 @@
     height: 100%;
     width: 64%;
     text-align: center;
+    object-fit: contain;
   }
   .post-preview .post-image {
     filter: grayscale(70%);
