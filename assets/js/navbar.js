@@ -112,3 +112,6 @@ var navbar = {
 };
 
 document.addEventListener('DOMContentLoaded', navbar.init);
+// Some friendly messages 😊
+console.log("Hey! Good to see you 😊 -Raiden");
+console.log("If you'd like to read the source, you can find it here: https://github.com/raiden-e/raiden-e.github.io");

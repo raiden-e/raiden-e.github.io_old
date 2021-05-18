@@ -1,4 +1,3 @@
-
 /*  Here's the meat and potatoes.
 Our mixin positions a copy of our text
 directly on our existing text, while
@@ -11,15 +10,16 @@ text set in the data-text attribute. */
   left: 0;
   width: 100%;
   height: 100%;
-  display: inline;
 }
 
 .glitch {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-size: 4em;
+  color: #a0a0a0;
+  display: inline-flex;
+  font-size: 3em;
   letter-spacing: 0.5em;
+  margin-left: 1rem;
+  position: relative;
+  text-align: center;
   /* Animation provies a slight random skew. Check bottom of doc
 for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
@@ -38,7 +38,7 @@ for more information on how to random skew. */
     clip: rect(44px, 450px, 56px, 0);
     /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
   with an alternating animation to keep things fresh. */
-    animation: glitch-anim 5s infinite linear alternate-reverse;
+    animation: glitch-anim 4s infinite linear alternate-reverse;
   }
 
   // Creates a copy after our text. Note comments from ::before.

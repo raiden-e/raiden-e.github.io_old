@@ -6,7 +6,7 @@ subtitle: Each post also has a subtitle
 gh-repo: raiden-e/raiden-e
 gh-badge: [star, fork, follow]
 tags: [test]
-# comments: true
+comments: true
 ---
 
 ## A demo post
