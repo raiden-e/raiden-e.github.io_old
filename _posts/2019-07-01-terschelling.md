@@ -21,7 +21,7 @@ maps_uri: "!1m18!1m12!1m3!1d76128.08393684367!2d5.28459162293554!3d53.3968929669
     </div>
 </div>
 
-<div style="margin-top: 3rem;display: flex; justify-content: space-between;">
-    <img src="{{ '/assets/img/terschelling_me.webp' | relative_url }}" alt="me" style="width: 49%; object-fit: cover; height: auto; max-height: 500px"/>
-    <img src="{{ '/assets/img/terschelling_duene.webp' | relative_url }}" alt="duene" style="width: 49%; object-fit: cover; height: auto; max-height: 500px"/>
+<div class="gallery">
+    <img src="{{ '/assets/img/terschelling_me.webp' | relative_url }}" alt="me" class="gallery-image"/>
+    <img src="{{ '/assets/img/terschelling_duene.webp' | relative_url }}" alt="duene" class="gallery-image"/>
 </div>

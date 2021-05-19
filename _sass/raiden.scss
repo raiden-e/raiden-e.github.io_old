@@ -145,6 +145,18 @@ img {
   max-width: 100%;
 }
 
+.gallery {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-image {
+  width: 49%;
+  object-fit: cover;
+  height: auto;
+  max-height: 500px;
+}
+
 .linked-section {
   padding-top: 3.75rem;
   margin-top: -1.5625rem;
