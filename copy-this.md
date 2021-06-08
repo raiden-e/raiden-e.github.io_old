@@ -8,7 +8,6 @@ subtitle: I love electronic music and mix it myself.
 <p>Into your C:>onsole</p>
 <script>
   async function onLoad() {
-    let params = new URLSearchParams(location.search);
-    document.getElementById("content").innerHTML = params.get("id");
+    document.getElementById("content").innerHTML = new URLSearchParams(location.search).get("id");
   }
 </script>
