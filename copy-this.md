@@ -8,7 +8,5 @@ permalink: /copy-this
 <div id='content'></div>
 <p>Into your C:>onsole</p>
 <script>
-  async function onLoad() {
-    $("#content").append(new URLSearchParams(location.search).get("id"));
-  }
+  async function onLoad() { $("#content").append(new URLSearchParams(location.search).get("id")); }
 </script>
