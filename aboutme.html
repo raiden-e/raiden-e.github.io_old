@@ -10,6 +10,6 @@ permalink: /aboutme
     setTimeout(function read() {
         $.get(
             'https://raw.githubusercontent.com/raiden-e/raiden-e/main/README.md',
-            function (data) { $("#content").append(marked(data)); });
+            function (data) { $("#content").append(marked.parse(data)); });
     }, 30);
 </script>
