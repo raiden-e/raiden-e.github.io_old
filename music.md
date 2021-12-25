@@ -2,6 +2,7 @@
 layout: default
 title: Music - Raiden Erdmann
 subtitle: I love electronic music and mix it myself.
+description: Music means a lot to me. I mix it on my DDJ 400 and also have playlists on Spotify, in which I invest quite some time
 ---
 
 # Mind looking at some of my work? 😊

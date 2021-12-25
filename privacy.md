@@ -2,6 +2,7 @@
 layout: default
 title: Datenschutzerklärung
 permalink: /privacy
+description: The privacy statement for my personal website
 ---
 
 # Datenschutzerklärung

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Music - Raiden Erdmann
-subtitle: I love electronic music and mix it myself.
+title: Copy this - Raiden Erdmann
+subtitle: Copy this link into your console.
 permalink: /copy-this
 ---
 # Copy this

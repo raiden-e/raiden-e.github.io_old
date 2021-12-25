@@ -2,6 +2,7 @@
 layout: post
 title: Tetraeder
 subtitle: A stunning construct on a pile of dirt.
+description: I went to the tetraeder in Bottrop on the 10 th march. Here's my experience
 cover-img: /assets/img/sunset.webp
 thumbnail-img: /assets/img/preview/tetraeder_pre.webp
 share-img: /assets/img/path.webp
