@@ -7,6 +7,7 @@ permalink: /copy-this
 # Copy this
 <div id='content'></div>
 <p>Into your C:>onsole</p>
+<div id='hash'></div>
 <script>
-  async function onLoad() { $("#content").append(new URLSearchParams(location.search).get("id")); }
+  document.getElementById("hash").innerText = new URLSearchParams(window.location.search).get("hash");
 </script>
