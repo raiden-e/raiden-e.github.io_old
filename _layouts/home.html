@@ -30,7 +30,7 @@ layout: page
     {% if site.feed_show_excerpt == false %}
     {% if thumbnail != "" %}
     <div class="post-image post-image-normal">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+      <a href="{{ post.url | absolute_url }}" width="1620" height="300" aria-label="Thumbnail">
         <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
       </a>
     </div>
@@ -39,7 +39,7 @@ layout: page
 
     {% if thumbnail != "" %}
     <div class="post-image post-image-small">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+      <a href="{{ post.url | absolute_url }}" width="1620" height="300" aria-label="Thumbnail">
         <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
       </a>
     </div>
@@ -48,7 +48,7 @@ layout: page
     {% unless site.feed_show_excerpt == false %}
     {% if thumbnail != "" %}
     <div class="post-image post-image-short">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+      <a href="{{ post.url | absolute_url }}" width="1620" height="300" aria-label="Thumbnail">
         <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
       </a>
     </div>
