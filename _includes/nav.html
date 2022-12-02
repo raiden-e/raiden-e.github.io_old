@@ -3,8 +3,8 @@
   {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
   {%- if site.title-img -%}
-  <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo"
-      src="{{ site.title-img | relative_url}}" /></a>
+  <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}">
+    <img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}" /></a>
   {%- elsif site.title -%}
   <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
   {%- endif -%}
@@ -48,7 +48,8 @@
   <div class="avatar-container">
     <div class="avatar-img-border">
       <a href="{{ '' | absolute_url }}">
-        <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" width="110" />
+        <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" width="110px"
+          height="110px" />
       </a>
     </div>
   </div>
