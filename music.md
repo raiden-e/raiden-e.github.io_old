@@ -9,8 +9,8 @@ description: Music means a lot to me. I mix it on my DDJ 400 and also have playl
 
 Here are two playlists that my bot updates weekly. They help me study and work. Check them out!
 
-<div style="display: flex;justify-content: space-between; margin-top: 2rem"><iframe width="49%" height="380" src="https://open.spotify.com/embed/playlist/6Cu6fL6djm63Em0i93IRUW" frameborder="0" style="margin-right: 2%; border-radius: 7px;">
-</iframe><iframe width="49%" height="380" style="align-content: right; border-radius: 7px;" src="https://open.spotify.com/embed/playlist/5h9LqGUUE4FKQfVwgAu1OA" frameborder="0"></iframe></div>
+<div style="display: flex;justify-content: space-between; margin-top: 2rem"><iframe width="49%" height="380" src="https://open.spotify.com/embed/playlist/0DBoAeAcD19yxfm3VkG3K9" frameborder="0" style="margin-right: 2%; border-radius: 7px;">
+</iframe><iframe width="49%" height="380" style="align-content: right; border-radius: 7px;" src="https://open.spotify.com/embed/playlist/6BjUHlMg8Qkb6VktjzBdac" frameborder="0"></iframe></div>
 <br />
 
 ## Check out some of my mixed sets 🎵
